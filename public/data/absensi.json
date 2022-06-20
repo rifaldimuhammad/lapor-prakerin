@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "absen": "20",
+      "name": "Muhammad Rifaldi",
+      "industries": "illiyin studio",
+      "workHour": "08:00 - 04:00",
+      "update": "2011/07/25",
+      "action":"<span class='data-table-action'>  &bull;&bull;&bull; </span> <div class='action-box'> <div class='btn-desc-popup' >Edit</div><div class='btn-delete-popup' >Delete</div></div>"
+    },
+    {
+      "absen": "20",
+      "name": "Muhammad Rifaldi",
+      "industries": "illiyin studio",
+      "workHour": "08:00 - 04:00",
+      "update": "2011/07/25",
+      "action":"<span class='data-table-action'>  &bull;&bull;&bull; </span> <div class='action-box'> <div class='btn-desc-popup' >Edit</div><div class='btn-delete-popup' >Delete</div></div>"
+    },
+    {
+      "absen": "20",
+      "name": "Muhammad Rifaldi",
+      "industries": "illiyin studio",
+      "workHour": "08:00 - 04:00",
+      "update": "2011/07/25",
+      "action":"<span class='data-table-action'>  &bull;&bull;&bull; </span> <div class='action-box'> <div class='btn-desc-popup' >Edit</div><div class='btn-delete-popup' >Delete</div></div>"
+    },
+    {
+      "absen": "20",
+      "name": "Muhammad Rifaldi",
+      "industries": "illiyin studio",
+      "workHour": "08:00 - 04:00",
+      "update": "2011/07/25",
+      "action":"<span class='data-table-action'>  &bull;&bull;&bull; </span> <div class='action-box'> <div class='btn-desc-popup' >Edit</div><div class='btn-delete-popup' >Delete</div></div>"
+    }
+  ]
+}

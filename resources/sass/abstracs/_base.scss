@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    text-decoration-line: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+html {
+    font-size: 10px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}

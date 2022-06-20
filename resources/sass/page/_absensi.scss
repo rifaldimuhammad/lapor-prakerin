@@ -1,0 +1,177 @@
+.absensi {
+    display: flex;
+    height: 100%;
+    background-color: $color-grey;
+
+    &-content {
+        width: 100%;
+        height: 100vh;
+        max-height: 100%;
+        position: relative;
+        padding: 4rem;
+        margin-left: 27rem;
+
+        display: flex;
+        flex-direction: column;
+        &__header {
+            margin-bottom: 4rem;
+            &-title {
+                display: flex;
+                align-items: center;
+                font-size: 2.4rem;
+                font-weight: 600;
+                color: $color-black;
+            }
+        }
+        &__data {
+            height: 100%;
+            background-color: #fff;
+            border-radius: 1.2rem;
+            margin-top: 5rem;
+            &-box {
+                &__header {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding: 2rem;
+                    flex-wrap: wrap;
+
+                    &--title {
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                        color: $color-black;
+                        flex-grow: 1;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        gap: 4rem;
+
+                        &-btn {
+                            padding: 1.4rem 0.8rem;
+                            font-size: 1.6rem;
+                            border: solid 1px $color-blue;
+                            border-radius: 0.6rem;
+                            color: $color-blue;
+                            display: flex;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        //form popup
+        .form {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            visibility: hidden;
+            opacity: 0;
+            transform: translate(-50%, 0%);
+            background: rgba($color-black, 0.5);
+            // backdrop-filter:calc() ;
+            height: 100vh;
+            width: 100%;
+            z-index: 3;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.1s cubic-bezier(0.48, 0.24, 0.65, 0.59);
+        }
+        &__form {
+            width: 60rem;
+            background-color: #fff;
+            border-radius: 1.2rem;
+            transform: translate(-50%, 0);
+            left: 50%;
+            position: absolute;
+
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+
+            &-header {
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+
+                &--title {
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                    color: $color-black;
+                    flex-grow: 1;
+                }
+                &--close {
+                    cursor: pointer;
+                    color: $color-text-1;
+                    font-size: 2.2rem;
+                    font-weight: 300;
+                    font-family: "Poppins", sans-serif;
+                }
+            }
+            &-container {
+                gap: 2.4rem;
+                display: flex;
+                flex-direction: column;
+
+                margin: 0 2rem 2rem 2rem;
+                padding: 2.8rem;
+                border: dashed 0.1rem $color-border;
+                height: fit-content;
+                font-size: 1.4rem;
+                color: $color-black;
+                &__box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    &-title {
+                        font-weight: 600;
+                    }
+                    &-input {
+                        padding: 1rem 2rem;
+                        height: 4rem;
+                        background-color: $color-blue-form;
+                        border-radius: 0.6rem;
+                        display: flex;
+                        position: relative;
+                        font-size: 1.4rem;
+                        input {
+                            width: 100%;
+                            background-color: $color-blue-form;
+                            outline: none;
+                            border: none;
+                            ::placeholder {
+                                color: $color-grey-2;
+                            }
+                        }
+                        &-action {
+                        }
+                    }
+                }
+                &__boxbtn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 2rem;
+
+                    & > * {
+                        padding: 1.2rem 2.6rem;
+                        border-radius: 0.6rem;
+                        font-size: 1.4rem;
+                        cursor: pointer;
+                    }
+                    &-cancel {
+                        border: solid 0.1rem $color-text-1;
+                        color: $color-text-1;
+                    }
+                    &-submit {
+                        border: none;
+                        background-color: $color-blue;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

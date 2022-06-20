@@ -1,0 +1,32 @@
+.arrow-dropdown-class {
+  font-size: 2rem;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  
+}
+
+.dropdown-class {
+  transition: all 0.1s cubic-bezier(0.48, 0.24, 0.65, 0.59);
+  position: absolute;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
+  margin-top: 5rem;
+  margin-left: -2rem;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem rgba($color-text-1, 0.2);
+  li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    &:hover {
+      background-color: $color-grey;
+    }
+  }
+}

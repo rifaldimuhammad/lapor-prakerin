@@ -1,0 +1,16 @@
+@import 'abstracs/variables';
+@import 'abstracs/base';
+@import 'abstracs/mixin';
+
+@import 'page/home';
+@import 'page/dashboard';
+@import 'page/login';
+@import 'page/signup';
+@import 'page/siswa';
+@import 'page/absensi';
+@import 'page/report';
+@import 'page/guru';
+@import 'page/header';
+
+@import 'component/dropdown';
+@import 'component/data-table';

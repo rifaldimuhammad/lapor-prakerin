@@ -1,0 +1,154 @@
+.guru {
+  display: flex;
+
+  max-height: 90rem;
+  background-color: $color-grey;
+
+  &-content {
+    &__header {
+      margin-bottom: 4rem;
+    }
+    &__descsiswa {
+      transition: all 0.1s cubic-bezier(0.48, 0.24, 0.65, 0.59);
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba($color-black, 0.5);
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-container {
+        gap: 2rem;
+        width: 94rem;
+        height: fit-content;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 1.2rem;
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          color: $color-black;
+          &--title {
+            margin-bottom: 2rem;
+            font-size: 2.4rem;
+            font-weight: 600;
+          }
+          &--close {
+            font-size: 2.4rem;
+            color: $color-text-2;
+            cursor: pointer;
+          }
+        }
+        &__info {
+          padding: 2rem 0;
+          border: dashed 1px $color-border;
+          border-radius: 1.2rem;
+          &-profile {
+            display: flex;
+            gap: 2rem;
+            margin: 0 2rem;
+            padding-bottom: 2rem;
+            border-bottom: solid 1px $color-border;
+
+            &__img {
+              border-radius: 50%;
+              height: 10rem;
+            }
+            &__man {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+              font-size: 1.6rem;
+              color: $color-text-1;
+
+              &-name {
+                font-weight: 600;
+                color: $color-black;
+                font-size: 2rem;
+              }
+              &-email {
+                font-weight: 400;
+                flex-grow: 1;
+              }
+              &-pkl {
+                font-weight: 400;
+
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                img {
+                  height: 1.8rem;
+                }
+              }
+            }
+          }
+
+          &-content {
+            margin: 2rem;
+            margin-bottom: 0;
+            display: flex;
+            gap: 1rem;
+            &__school,
+            &__industries {
+              &-box {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(19rem, 1fr));
+                grid-template-rows: repeat(3, auto);
+                gap: 1rem;
+                border: solid 1px $color-border;
+                padding: 1rem;
+
+                border-radius: 0.6rem;
+
+                &__title {
+                  font-size: 2rem;
+                  font-weight: 500;
+                  color: $color-blue;
+                  grid-column: 1 /-1;
+                  margin-bottom: 1.6rem;
+                }
+                &--class,
+                &--absen,
+                &--jurusan,
+                &--email {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 0.5rem;
+                  // overflow: auto;
+                  p {
+                    font-size: 1.6rem;
+                    color: $color-black;
+                    font-weight: 600;
+                    word-break: break-all;
+                  }
+                  span {
+                    word-break: break-all;
+                    height: 100%;
+                    font-size: 1.4rem;
+                    color: $color-text-1;
+                  }
+                }
+                &--class {
+                }
+                &--absen {
+                }
+                &--jurusan {
+                }
+                &--email {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
