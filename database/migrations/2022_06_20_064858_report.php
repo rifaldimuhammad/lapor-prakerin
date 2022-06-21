@@ -17,7 +17,8 @@ class Report extends Migration
             $table->id();
             $table->string('name');
             $table->string('class');
-            $table->dateTime('date');
+            $table->date('date');
+            $table->time('untiltime');
             $table->time('time');
             $table->string('position');
             $table->string('activity');

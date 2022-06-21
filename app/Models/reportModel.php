@@ -18,6 +18,7 @@ class reportModel extends Model
         'class',
         'date',
         'time',
+        'untiltime',
         'position',
         'activity',
         

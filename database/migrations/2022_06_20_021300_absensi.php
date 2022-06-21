@@ -17,7 +17,8 @@ class Absensi extends Migration
             $table->id();
             $table->string('name');
             $table->string('class');
-            $table->dateTime('date');
+            $table->date('date');
+            
             $table->time('time');
 
             $table->timestamps();

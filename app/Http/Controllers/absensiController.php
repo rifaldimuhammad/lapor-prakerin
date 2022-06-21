@@ -12,7 +12,7 @@ class absensiController extends Controller
 
     public function index()
     {
-        $absensi = DB::table('absensi')->get();
+        $absensi = absensiModel::get();
 
         return view('absensi', ['absensi' => $absensi]);
     }
@@ -27,8 +27,14 @@ class absensiController extends Controller
         ]);
 
         $data = absensiModel::create($absensiform);
+        return redirect('/absensi');
+    }
 
-        
+    public function deleteAbsensi($id)
+    {
+        $data = absensiModel::where('id', $id)
+            ->forceDelete();
+
         return redirect('/absensi');
     }
 }

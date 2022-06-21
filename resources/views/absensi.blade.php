@@ -17,7 +17,35 @@
                         </div>
                     </div>
 
-                    <div id="data-table-absensi-box"></div>
+                    <div id="data-table-absensi-box">
+                        <table id="data-table-absensi" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Class</th>
+                                    <th>work Hour</th>
+                                    <th>Update</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($absensi as $a)
+                                    <tr>
+                                        <td> {{ $a->name }} </td>
+                                        <td> {{ $a->class }}</td>
+                                        <td> {{ $a->time }}</td>
+                                        <td> {{ $a->date }}</td>
+                                        <td><span class='data-table-action'> &bull;&bull;&bull; </span>
+                                            <div class='action-box'>
+                                                <a href="/absensi/delete/{{ $a->id }}"
+                                                    class='btn-delete-popup'>Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="form" id="modal-form-popup">
@@ -144,35 +172,11 @@
 
         //data table
 
-        $('#data-table-absensi-box').append(
-            `<table id="data-table-absensi" class="display" style="width:100%">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Industries</th>
-              <th>work Hour</th>
-              <th>Update</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-        </table>`
-        );
-
         $(document).ready(function() {
             $('#data-table-absensi').DataTable({
-                // ajax: '../resources/data/absensi.json',
-                columns: [{
-                    data: 'name'
-                }, {
-                    data: 'industries'
-                }, {
-                    data: 'workHour'
-                }, {
-                    data: 'update'
-                }, {
-                    data: 'action'
-                }],
+
             });
+
             $('#data-table-absensi_filter').insertAfter('.absensi-content__data-box__header--title');
             $(document).on('click', '.data-table-action', function() {
                 if (!$(this).siblings('.action-box').hasClass('display-flex')) {

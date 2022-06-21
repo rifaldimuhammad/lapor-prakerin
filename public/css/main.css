@@ -541,11 +541,12 @@ p {
 
 .absensi {
   display: flex;
+  min-height: 100vh;
   height: 100%;
   background-color: #f5f5f5; }
   .absensi-content {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     max-height: 100%;
     position: relative;
     padding: 4rem;
@@ -680,7 +681,8 @@ p {
 .report {
   display: flex;
   background-color: #f5f5f5;
-  height: 100%; }
+  height: 100%;
+  min-height: 100vh; }
   .report .absensi-content__data-box__header--title-btn {
     padding: 1.3rem 3.4rem; }
   .report .absensi-content__form {
@@ -691,6 +693,12 @@ p {
       grid-template-rows: repeat(4, 1fr); }
       .report .absensi-content__form-container__box {
         width: 100%; }
+        .report .absensi-content__form-container__box-input {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .report .absensi-content__form-container__box-input input[type="time"] {
+            width: fit-content; }
       .report .absensi-content__form-container__boxbtn {
         grid-column: 1 / -1; }
       .report .absensi-content__form-container #report-form-activity .absensi-content__form-container__box-input-action p {
