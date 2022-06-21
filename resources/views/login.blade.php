@@ -23,7 +23,7 @@
 
 
 
-                <form action="/login" method="POST" class="login-box__content-form">
+                <form action="/loginAuth" method="POST" class="login-box__content-form">
                     @csrf
                     @if (session()->has('succes'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">

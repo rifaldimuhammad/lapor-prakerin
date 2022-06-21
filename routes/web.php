@@ -19,7 +19,8 @@ use App\Http\Controllers\reportController;
 */
 
 Route::get('/login', [loginController::class, 'index']);
-Route::post('/login', [loginController::class, 'authenticate']);
+Route::post('/loginAuth', [loginController::class, 'authenticate']);
+Route::get('/logout', [loginController::class, 'logout']);
 
 Route::get('/signup', [registerController::class, 'index']);
 Route::post('/siswa', [registerController::class, 'storeSiswa']);

@@ -39,4 +39,11 @@ class loginController extends Controller
 
         return back()->with('loginError', 'Login failed');
     }
+
+    public function logout()
+    {
+
+        dd('berhasil');
+        return view('login');
+    }
 }

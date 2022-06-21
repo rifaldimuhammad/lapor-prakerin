@@ -26,7 +26,7 @@
         </ul>
         <ul class="dashboard__nav-logout">
             <li class="dashboard__nav-logout__item">
-                <a href="/" class="dashboard__nav-logout__item-list">
+                <a href="/login" class="dashboard__nav-logout__item-list">
                     <ion-icon name="log-out"></ion-icon>
                     <p>Logout</p>
                 </a>

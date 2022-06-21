@@ -1,109 +1,113 @@
 .dashboard {
-  background: $color-black;
+    background: $color-black;
 
-  width: 27rem;
-  height: 100%;
-  position: fixed;
-  z-index: 2;
-  &__nav {
+    width: 27rem;
     height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    &-title {
-      padding: 4rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      gap: 0.5rem;
-      &__logo {
-        height: 4rem;
-      }
-      &__text {
-        font-size: 2.4rem;
-        color: #fff;
-        font-weight: 600;
-      }
-    }
-    &-link {
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-grow: 1;
-      width: 100%;
-      border-bottom: solid 1px $color-border;
-
-      &__item {
-        margin-left: 1rem;
-        padding: 2rem 0;
-        padding-left: 2rem;
-        position: relative;
-        border-radius: 3.5rem 0 0 3.5rem;
-        &:hover {
-          background-color: $color-grey;
-
-          & > * {
-            color: $color-black;
-          }
-          &::before {
-            content: '';
-            position: absolute;
-            right: 0rem;
-            top: -6rem;
-            width: 6rem;
-            height: 6rem;
-            background: transparent;
-            border-radius: 50%;
-            box-shadow: 3rem 3rem 0 $color-grey;
-          }
-          &::after {
-            transition: opacity 1s;
-            content: '';
-            position: absolute;
-            right: 0rem;
-            bottom: -6rem;
-            width: 6rem;
-            height: 6rem;
-            background: transparent;
-            border-radius: 50%;
-            box-shadow: 3rem -3rem 0 $color-grey;
-          }
+    position: fixed;
+    z-index: 2;
+    &__nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &-title {
+            padding: 4rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 0.5rem;
+            &__logo {
+                height: 4rem;
+            }
+            &__text {
+                font-size: 2.4rem;
+                color: #fff;
+                font-weight: 600;
+            }
         }
-        &-list {
-          display: flex;
-          align-items: center;
-          gap: 1.2rem;
-          color: #fff;
+        &-link {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+            width: 100%;
+            border-bottom: solid 1px $color-border;
 
-          ion-icon {
-            font-size: 2rem;
-          }
-          p {
-            font-size: 1.4rem;
-            white-space: nowrap;
-          }
+            &__item {
+                margin-left: 1rem;
+                padding: 2rem 0;
+                padding-left: 2rem;
+                position: relative;
+                border-radius: 3.5rem 0 0 3.5rem;
+                &:hover {
+                    background-color: $color-grey;
+
+                    & > * {
+                        color: $color-black;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        right: 0rem;
+                        top: -6rem;
+                        width: 6rem;
+                        height: 6rem;
+                        background: transparent;
+                        border-radius: 50%;
+                        box-shadow: 3rem 3rem 0 $color-grey;
+                    }
+                    &::after {
+                        transition: opacity 1s;
+                        content: "";
+                        position: absolute;
+                        right: 0rem;
+                        bottom: -6rem;
+                        width: 6rem;
+                        height: 6rem;
+                        background: transparent;
+                        border-radius: 50%;
+                        box-shadow: 3rem -3rem 0 $color-grey;
+                    }
+                }
+                &-list {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+                    color: #fff;
+
+                    ion-icon {
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1.4rem;
+                        white-space: nowrap;
+                    }
+                }
+            }
         }
-      }
-    }
 
-    &-logout {
-      &__item {
-        padding: 4rem 0;
+        &-logout {
+            &__item {
+                display: flex;
+                align-items: center;
+                gap: 1.2rem;
+                padding: 4rem 0;
 
-        &-list {
-          color: #fff;
-          display: flex;
-          align-items: center;
-          gap: 1.2rem;
-          ion-icon {
-            font-size: 2rem;
-          }
-          p {
-            font-size: 1.4rem;
-          }
+                &-list {
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+                    ion-icon {
+                        font-size: 2rem;
+                    }
+                    a {
+                        color: #fff;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
