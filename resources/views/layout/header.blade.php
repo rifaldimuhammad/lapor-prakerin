@@ -12,7 +12,7 @@
                 onmouseout="popupProfile('profile')">
                 <div class="header__profile-info__img"></div>
                 <div class="header__profile-info__name">
-                    <p class="header__profile-info__name-1">Annie Leonhart</p>
+                    <p class="header__profile-info__name-1">{{ Session::get('name_user') }}</p>
                     <p class="header__profile-info__name-2">Student Account</p>
                 </div>
             </div>
@@ -23,16 +23,16 @@
                     <div class="header__profile-popup__img--img"></div>
                 </div>
                 <div class="header__profile-popup__name">
-                    <p class="header__profile-popup__name-student">Annie Lonhart</p>
-                    <p class="header__profile-popup__name-email">youremail@smkn1purwosari.sch.id</p>
+                    <p class="header__profile-popup__name-student">{{ Session::get('name_user') }}</p>
+                    <p class="header__profile-popup__name-email">{{ Session::get('email_user') }}</p>
                 </div>
                 <div class="header__profile-popup__info">
                     <div class="header__profile-popup__info-box">
                         <div class="header__profile-popup__info-box--title">
                             <img src={{ asset('./img/CheckedUserMale.svg') }} />
-                            <p>Mentor jurusan</p>
+                            <p>Jurusan</p>
                         </div>
-                        <div class="header__profile-popup__info-box--mayor">rekayasa perangkat lunak</div>
+                        <div class="header__profile-popup__info-box--mayor">{{Session::get('class_user')}}</div>
                     </div>
                 </div>
             </div>

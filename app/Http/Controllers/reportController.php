@@ -37,10 +37,19 @@ class reportController extends Controller
         return redirect('/report');
     }
 
-    public function editReport(Request $request){
+    public function editReport(Request $request)
+    {
+        $data = reportModel::find($request->id);
+        $data->name = $request->name;
+        $data->class = $request->class;
+        $data->date = $request->date;
+        $data->time = $request->time;
+        $data->untiltime = $request->untiltime;
+        $data->activity = $request->activity;
+        $data->position = $request->position;
 
-        $data = reportModel::find();
+        $data->save();
 
-        $data->name = 'bismillah';
+        return redirect('/report');
     }
 }
